@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Épica</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            background: linear-gradient(45deg, #ff6a00, #1329f5, #ff0000);
+            background-size: 300% 300%;
+            animation: gradientAnimation 10s ease infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 30px;
+            animation: fadeIn 3s ease-out;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 50px;
+            animation: fadeIn 3s ease-out 1s;
+        }
+
+        /* Efecto de fondo gradiente */
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Estilos de los botones */
+        .button-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+            border-radius: 30px;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        }
+
+        button:hover {
+            background-color: white;
+            color: #0051ff;
+            transform: scale(1.1);
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        /* Animación de desvanecimiento */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 1rem;
+            color: white;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Bienvenido a la Página Épica</h1>
+        <p>Prepárate para una experiencia única, y un trabajo muy epico.</p>
+        <div class="button-container">
+            <button onclick="window.open('2.pdf', '_blank');">Grupos y Usuario</button>
+            <button onclick="window.open('1.pdf', '_blank');">Configuracion de un adaptador de red</button>
+            <button onclick="window.open('3.pdf', '_blank');">post instalación</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Página Web Épica y antes del GTA VI | Todos los derechos reservados.</p>
+        <p>Trabajo echo por Samuel y Ezequiel,PD no me roben la pagina web ¡eh!.</p>
+    </footer>
+
+</body>
+</html>
